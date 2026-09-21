@@ -1,15 +1,14 @@
-# Retail-sales-dashboard
-power bi dashboard
-📊 Retail Sales Dashboard --- Power BI
+📊 Retail Sales Dashboard --- Power BI + SQL
 
-An interactive Retail Sales Dashboard built using Microsoft Power
-BI to analyze sales performance, profitability, customers, products,
-stores, regions, and monthly trends.
+An interactive Retail Sales Dashboard built using SQL and
+Microsoft Power BI to analyze sales performance, profitability,
+customers, products, stores, regions, and monthly trends.
 
 📌 Project Overview
 
-This project transforms raw retail sales data into an interactive
-business intelligence dashboard.
+This project combines SQL for data querying and analysis with
+Power BI for data transformation, modeling, DAX calculations, and
+interactive visualization.
 
 The dashboard helps answer questions such as:
 
@@ -29,13 +28,45 @@ How many transactions and customers are involved?
 
 🛠️ Tools & Technologies
 
-Microsoft Power BI
+SQL / MySQL --- data querying, filtering, aggregation, and
+analysis
+
+Microsoft Power BI --- dashboard development and visualization
 
 Power Query --- data cleaning and transformation
 
 DAX --- calculated measures and business metrics
 
 CSV --- source datasets
+
+🗄️ SQL Analysis
+
+SQL was used as part of the project to work with the retail datasets and
+perform data analysis before/alongside visualization in Power BI.
+
+Typical SQL operations used in the project include:
+
+SELECT for retrieving data
+
+WHERE for filtering records
+
+GROUP BY for category/store/region-level analysis
+
+Aggregate functions such as SUM(), COUNT(), and AVG()
+
+JOIN operations to combine related customer, product, store, and
+sales data
+
+Sorting and filtering results for business analysis
+
+Example:
+
+SELECT
+    store_id,
+    SUM(total_amount) AS total_sales
+FROM sales
+GROUP BY store_id
+ORDER BY total_sales DESC;
 
 📂 Dataset
 
@@ -69,6 +100,17 @@ analysis.
 
 The dashboard follows a simple star-schema style model, with Sales
 acting as the central fact table.
+
+                    DateTable
+                        │
+                        │ 1 : *
+                        ▼
+Customers (1) ──────► Sales ◄────── Products (1)
+                        ▲
+                        │
+                        │ * : 1
+                        │
+                     Stores
 
 Relationships:
 
@@ -158,20 +200,45 @@ Product Category
 
 These filters dynamically update the dashboard visuals and KPIs.
 
+📁 Repository Structure
+
+Retail-Sales-PowerBI-Dashboard/
+│
+├── Retail_Sales_Dashboard.pbix
+├── README.md
+│
+├── screenshots/
+│   └── dashboard.png
+│
+├── data/
+│   ├── customers.csv
+│   ├── products.csv
+│   ├── sales.csv
+│   └── stores.csv
+│
+└── sql/
+    └── retail_sales_queries.sql
 
 🚀 How to Use
 
 Clone or download this repository.
 
+If using SQL, import the datasets into your MySQL database.
+
+Run the SQL queries in the sql/ folder for analysis.
+
 Open Retail_Sales_Dashboard.pbix using Microsoft Power BI Desktop.
 
-If required, update the CSV file paths in Power Query.
+If required, update the data source paths/connections in Power
+Query.
 
 Refresh the dataset.
 
 Use the slicers to interact with the dashboard.
 
 💡 Key Skills Demonstrated
+
+SQL querying and data analysis
 
 Data cleaning and transformation using Power Query
 
@@ -190,3 +257,9 @@ Interactive dashboard design
 Business-oriented data visualization
 
 Power BI report formatting
+
+Combining SQL and Power BI in a data analytics workflow
+
+👨‍💻 Author
+
+Anjali Rode
