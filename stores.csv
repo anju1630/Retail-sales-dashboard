@@ -1,0 +1,6 @@
+store_id,store_name,region,city
+1,"Mumbai Central",West,Mumbai
+2,"Delhi Connaught",North,Delhi
+3,"Bangalore MG Road",South,Bangalore
+4,"Chennai T Nagar",South,Chennai
+5,"Hyderabad Hitech",South,Hyderabad

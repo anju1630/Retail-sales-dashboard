@@ -1,0 +1,11 @@
+customer_id,customer_name,gender,age,city,signup_date
+1,"Anjali Mehta",F,28,Mumbai,2022-01-15
+2,"Rohan Shah",M,34,Delhi,2021-11-20
+3,"Priya Nair",F,25,Bangalore,2023-03-10
+4,"Karan Verma",M,41,Mumbai,2020-07-05
+5,"Sneha Iyer",F,31,Chennai,2022-09-12
+6,"Amit Joshi",M,29,Delhi,2023-01-25
+7,"Divya Reddy",F,37,Hyderabad,2021-05-18
+8,"Vikram Singh",M,45,Mumbai,2019-12-01
+9,"Neha Kapoor",F,26,Bangalore,2023-06-30
+10,"Arjun Rao",M,33,Chennai,2022-04-22

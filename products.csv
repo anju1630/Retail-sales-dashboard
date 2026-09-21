@@ -1,0 +1,11 @@
+product_id,product_name,category,unit_price,cost_price
+1,"Wireless Mouse",Electronics,799.00,450.00
+2,"Bluetooth Speaker",Electronics,1999.00,1200.00
+3,"Cotton T-Shirt",Apparel,499.00,250.00
+4,"Running Shoes",Apparel,2499.00,1500.00
+5,"Coffee Maker","Home & Kitchen",3499.00,2100.00
+6,"Non-stick Pan","Home & Kitchen",1299.00,700.00
+7,"Office Chair",Furniture,5999.00,3800.00
+8,"LED Desk Lamp",Furniture,899.00,500.00
+9,"Yoga Mat",Sports,699.00,350.00
+10,"Dumbbell Set",Sports,2199.00,1400.00
